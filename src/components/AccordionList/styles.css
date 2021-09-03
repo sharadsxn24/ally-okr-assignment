@@ -1,0 +1,72 @@
+.accordion-list {
+  margin: 0 10px;
+}
+.accordion-list .accordion-list__header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  position:relative;
+}
+.accordion-list .accordion-list__header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.accordion-list .accordion-list__header__icon {
+  rotate: (0deg);
+  padding: 10px;
+  transition: transform 300ms ease-in-out;
+  cursor: pointer;
+}
+.accordion-list .accordion-list__content {
+  max-height: 1000px;
+  overflow: hidden;
+  transition: max-height 500ms ease-in-out;
+}
+.accordion-list .accordion-list__content .message {
+  padding: 25px 0 25px 110px;
+  position: relative;
+  font-style: italic;
+}
+.accordion-list .accordion-list__panel {
+  border-bottom: 1px solid #ddd;
+}
+.accordion-list .accordion-list__panel.collapse .accordion-list__header__icon {
+  transform: rotate(-90deg);
+  transition: transform 300ms ease-in-out;
+}
+.accordion-list .accordion-list__panel.collapse .accordion-list__content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 300ms ease-in-out;
+}
+.accordion-list .accordion-list__item {
+  padding: 25px 0 25px 110px;
+  position: relative;
+}
+.accordion-list .accordion-list__item.odd {
+  background: #f5f5f5;
+}
+.accordion-list .accordion-list__header:before,
+.accordion-list .accordion-list__item:before {
+  content: ' ';
+  background: #ddd;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 63px;
+}
+.accordion-list .accordion-list__header:before {
+  top: 80%;
+  height: 20%;
+}
+.accordion-list .accordion-list__item:after {
+    content: ' ';
+    background: #ddd;
+    height: 2px;
+    position: absolute;
+    width: 20px;
+    top: 50%;
+    left: 65px;
+}

@@ -1,0 +1,19 @@
+.okr-list__item {
+  display: flex;
+  align-items: top;
+}
+.okr-list__item .okr-list__num {
+  margin-right: 10px; 
+}
+.okr-list__item .okr-list__icon {
+  margin-right: 20px;
+}
+.okr-list__item .okr-list__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.okr-list__item .okr-list__title:hover {
+  color: var(--primary-color)
+}

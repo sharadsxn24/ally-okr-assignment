@@ -1,0 +1,13 @@
+.filter-panel {
+  padding: 10px 30px;
+}
+
+.filter-panel .filter-panel__item {
+  display: flex;
+  align-items: center;
+}
+
+.filter-panel .filter-panel__title {
+  margin-right: 10px;
+  font-weight: bold;
+}

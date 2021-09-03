@@ -1,0 +1,16 @@
+.okr-list__header {
+  display: flex;
+  align-items: center;
+}
+.okr-list__icon {
+  margin-right: 20px;
+}
+.okr-list__header .okr-list__num {
+  margin-right: 10px;
+}
+.okr-list__header .okr-list__title {
+  cursor: pointer;
+}
+.okr-list__header .okr-list__title:hover {
+  color: var(--primary-color)
+}
